@@ -1,0 +1,58 @@
+<img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
+<div class="content">
+<div class="menu-wrapper">
+  <h1>🌍 Worldle 🌏</h1>
+  <p class="menu-description">Escolha um modo de jogo</p>
+
+  <div class="game-mode" onclick="startQuizMode()">
+  <h2>Modo Quiz</h2>
+  <p class="description">Perguntas diversas</p>
+  </div>
+  
+  <div class="game-mode" onclick="startClassicMode()">
+    <h2>Modo Clássico</h2>
+    <p class="description">Consiga pistas a cada tentativa</p>
+  </div>
+   
+</div>
+
+<div id="gameContainer" style="display: none">
+  <h1 class="game-title">🌍 Worldle - Clássico 🌏</h1>
+  <div class="input-section">
+    <input type="text" id="guessInput" placeholder="Digite o nome do país..." />
+    <div id="suggestions" class="suggestions-box"></div>
+    <button onclick="makeGuess()">Enviar</button>
+  </div>
+
+  <div id="squaresContainer" class="squares-container"></div>
+
+  <div class="color-indicator">
+    <div><span class="color-box acerto"></span> Correto</div>
+    <div><span class="color-box parcial"></span> Parcial</div>
+    <div><span class="color-box erro"></span> Errado</div>
+  </div>
+
+  <ul id="attemptsList"></ul>
+
+  <div id="resultMessage"></div>
+
+  <div id="actionButtons" style="display: none; gap: 10px; justify-content: center; margin-top: 15px;">
+    <button onclick="reiniciarJogo()">🔄 Jogar Novamente</button>
+    <button onclick="voltarMenu()">🏠 Voltar ao Menu</button>
+  </div>
+  
+</div>
+  
+  <div id="quizContainer" style="display: none">
+  <h1 class="game-title">🌍 Worldle - Quiz 🌏</h1>
+  <div id="quizContent"></div>
+  <div id="quizResult" style="display: none; text-align: center; margin-top: 20px;">
+    <h2>Você acertou <span id="score"></span>/10!</h2>
+    <canvas id="resultCircle" width="120" height="120"></canvas>
+    <br><br>
+    <button onclick="voltarMenu()">🏠 Voltar ao Menu</button>
+  </div>
+</div>
+    <footer>© Marcelo Guedes - 2025</footer>
+
+
