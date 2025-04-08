@@ -1,4 +1,4 @@
-# Wordle - Quiz Imersão DEV
+# Worldle - Quiz Imersão DEV
 
 A Pen created on CodePen.
 
